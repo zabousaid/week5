@@ -1,6 +1,7 @@
 <table>
   <thead>
     <tr>
+      <th></th>
       <th>Title</th>
       <th>Year</th>
     </tr>
@@ -8,6 +9,10 @@
   <tbody>
   <% @movies.each do |movie| %>
     <tr>
+      <td>
+        <%= link_to "Toast", "movies/#{movie.id}", method: 'delete' %>
+        <%= link_to "Edit", "movies/#{movie.id}/edit" %>
+      </td>
       <td><%= link_to movie.title, "/movies/#{movie.id}" %></td>
       <td><%= movie.year %></td>
     </tr>
