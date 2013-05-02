@@ -14,7 +14,7 @@ data.each do |movie_info|
   m = Movie.new
   m.title = movie_info[:title]
   m.year = movie_info[:year]
-  m.save
+
 end
 
 puts "There are now #{Movie.count} movies in the database"
