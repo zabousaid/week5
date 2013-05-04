@@ -14,7 +14,19 @@ data.each do |movie_info|
   m = Movie.new
   m.title = movie_info[:title]
   m.year = movie_info[:year]
-
+  m.save
 end
 
 puts "There are now #{Movie.count} movies in the database"
+
+Theater.destroy_all
+theater_data = [{name: "Block Cinema", address: '40 Art Circle Drive, Evanston, IL'},
+                { name: 'Century 12 Evanston', address: '1715 Maple Ave., Evanston, IL'}]
+
+theater_data.each do |theater_info|
+  t = Theater.new
+  t.name = theater_info[:name]
+  t.address = theater_info[:address]
+  t.save
+end
+puts "There are now #{Theater.count} theaters in the database"
