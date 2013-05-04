@@ -4,7 +4,8 @@ This week, you'll help fix a Rails app that your co-worker claimed is working, b
 
 ## Requirements
 
-* Fork this repository into your account, then clone from your account as usual.* Go to the homework/MoviesApp folder, and do whatever you must to be able to see the list of movies. (Hint: bundle install, rake db:migrate, etc...)
+* Fork this repository into your account, then clone from your account as usual.
+* Go to the homework/MoviesApp folder, and do whatever you must to be able to see the list of movies. (Hint: bundle install, rake db:migrate, etc...)
 
 All seven action for the Movie resource should already be working. However, some actions for the Theater resource are buggy.
 
